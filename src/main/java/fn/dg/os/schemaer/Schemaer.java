@@ -29,7 +29,7 @@ public class Schemaer extends AbstractVerticle {
     RemoteCacheManager remote;
     long timerId;
 
-    AtomicInteger counter;
+    AtomicInteger counter = new AtomicInteger();
 
     @Override
     public void start(io.vertx.core.Future<Void> future) {
